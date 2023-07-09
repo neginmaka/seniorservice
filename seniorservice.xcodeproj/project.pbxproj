@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0913264C2A570CF700D06198 /* PreviousRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913264B2A570CF700D06198 /* PreviousRequestsViewController.swift */; };
+		0981468A2A5A36B80084654A /* HomeServicesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098146892A5A36B80084654A /* HomeServicesEnum.swift */; };
+		0981468C2A5A3D070084654A /* HealthServicesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0981468B2A5A3D070084654A /* HealthServicesEnum.swift */; };
+		098E1BA42A4CDFE400E1ACAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098E1BA32A4CDFE400E1ACAA /* HomeViewController.swift */; };
+		098E1BA62A4CE2DE00E1ACAA /* ServiceRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098E1BA52A4CE2DE00E1ACAA /* ServiceRequestViewController.swift */; };
+		0993C99D2A4EFA6D000C0528 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993C99C2A4EFA6D000C0528 /* HealthViewController.swift */; };
 		09BF2C7A2A49B31B009F2EA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF2C792A49B31B009F2EA1 /* AppDelegate.swift */; };
 		09BF2C7C2A49B31B009F2EA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF2C7B2A49B31B009F2EA1 /* SceneDelegate.swift */; };
-		09BF2C7E2A49B31B009F2EA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF2C7D2A49B31B009F2EA1 /* ViewController.swift */; };
+		09BF2C7E2A49B31B009F2EA1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF2C7D2A49B31B009F2EA1 /* FirstViewController.swift */; };
 		09BF2C812A49B31B009F2EA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BF2C7F2A49B31B009F2EA1 /* Main.storyboard */; };
-		09BF2C832A49B31D009F2EA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BF2C822A49B31D009F2EA1 /* Assets.xcassets */; };
 		09BF2C862A49B31D009F2EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BF2C842A49B31D009F2EA1 /* LaunchScreen.storyboard */; };
+		09BF2C922A4B626D009F2EA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BF2C912A4B626D009F2EA1 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0913264B2A570CF700D06198 /* PreviousRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRequestsViewController.swift; sourceTree = "<group>"; };
+		098146892A5A36B80084654A /* HomeServicesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServicesEnum.swift; sourceTree = "<group>"; };
+		0981468B2A5A3D070084654A /* HealthServicesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthServicesEnum.swift; sourceTree = "<group>"; };
+		098E1BA32A4CDFE400E1ACAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		098E1BA52A4CE2DE00E1ACAA /* ServiceRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestViewController.swift; sourceTree = "<group>"; };
+		0993C99C2A4EFA6D000C0528 /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		09BF2C762A49B31B009F2EA1 /* seniorservice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seniorservice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BF2C792A49B31B009F2EA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09BF2C7B2A49B31B009F2EA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09BF2C7D2A49B31B009F2EA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09BF2C7D2A49B31B009F2EA1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		09BF2C802A49B31B009F2EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		09BF2C822A49B31D009F2EA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09BF2C852A49B31D009F2EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09BF2C872A49B31D009F2EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09BF2C912A4B626D009F2EA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Desktop/Quiz/Quiz/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		098146882A5A36920084654A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				098146892A5A36B80084654A /* HomeServicesEnum.swift */,
+				0981468B2A5A3D070084654A /* HealthServicesEnum.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0981468D2A5A3F980084654A /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				09BF2C792A49B31B009F2EA1 /* AppDelegate.swift */,
+				09BF2C7B2A49B31B009F2EA1 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		09BF2C6D2A49B31B009F2EA1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +86,27 @@
 		09BF2C782A49B31B009F2EA1 /* seniorservice */ = {
 			isa = PBXGroup;
 			children = (
-				09BF2C792A49B31B009F2EA1 /* AppDelegate.swift */,
-				09BF2C7B2A49B31B009F2EA1 /* SceneDelegate.swift */,
-				09BF2C7D2A49B31B009F2EA1 /* ViewController.swift */,
+				0981468D2A5A3F980084654A /* Delegates */,
+				098146882A5A36920084654A /* Constants */,
+				09BF2C8F2A49B4D3009F2EA1 /* Controllers */,
 				09BF2C7F2A49B31B009F2EA1 /* Main.storyboard */,
-				09BF2C822A49B31D009F2EA1 /* Assets.xcassets */,
+				09BF2C912A4B626D009F2EA1 /* Assets.xcassets */,
 				09BF2C842A49B31D009F2EA1 /* LaunchScreen.storyboard */,
 				09BF2C872A49B31D009F2EA1 /* Info.plist */,
 			);
 			path = seniorservice;
+			sourceTree = "<group>";
+		};
+		09BF2C8F2A49B4D3009F2EA1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				098E1BA32A4CDFE400E1ACAA /* HomeViewController.swift */,
+				09BF2C7D2A49B31B009F2EA1 /* FirstViewController.swift */,
+				0993C99C2A4EFA6D000C0528 /* HealthViewController.swift */,
+				0913264B2A570CF700D06198 /* PreviousRequestsViewController.swift */,
+				098E1BA52A4CE2DE00E1ACAA /* ServiceRequestViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09BF2C862A49B31D009F2EA1 /* LaunchScreen.storyboard in Resources */,
-				09BF2C832A49B31D009F2EA1 /* Assets.xcassets in Resources */,
+				09BF2C922A4B626D009F2EA1 /* Assets.xcassets in Resources */,
 				09BF2C812A49B31B009F2EA1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09BF2C7E2A49B31B009F2EA1 /* ViewController.swift in Sources */,
+				09BF2C7E2A49B31B009F2EA1 /* FirstViewController.swift in Sources */,
 				09BF2C7A2A49B31B009F2EA1 /* AppDelegate.swift in Sources */,
 				09BF2C7C2A49B31B009F2EA1 /* SceneDelegate.swift in Sources */,
+				0981468A2A5A36B80084654A /* HomeServicesEnum.swift in Sources */,
+				098E1BA42A4CDFE400E1ACAA /* HomeViewController.swift in Sources */,
+				0913264C2A570CF700D06198 /* PreviousRequestsViewController.swift in Sources */,
+				0993C99D2A4EFA6D000C0528 /* HealthViewController.swift in Sources */,
+				0981468C2A5A3D070084654A /* HealthServicesEnum.swift in Sources */,
+				098E1BA62A4CE2DE00E1ACAA /* ServiceRequestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,11 +338,13 @@
 				DEVELOPMENT_TEAM = LFT78YCJ38;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = seniorservice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Services;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +352,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.negin.seniorservice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,11 +371,13 @@
 				DEVELOPMENT_TEAM = LFT78YCJ38;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = seniorservice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Services;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +385,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.negin.seniorservice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
