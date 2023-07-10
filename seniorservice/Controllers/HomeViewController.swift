@@ -24,8 +24,16 @@ class HomeViewController: UIViewController {
         goToServiceRequestFor(service: HomeServicesEnum.Painting)
     }
     
+    @IBAction func ElectricalButton(_ sender: UIButton) {
+        goToServiceRequestFor(service: HomeServicesEnum.Electrical)
+    }
+    
     @IBAction func PlumbingButton(_ sender: UIButton) {
         goToServiceRequestFor(service: HomeServicesEnum.Plumbing)
+    }
+    
+    @IBAction func GeneralButton(_ sender: UIButton) {
+        goToServiceRequestFor(service: HomeServicesEnum.General)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

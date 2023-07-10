@@ -10,6 +10,10 @@
 		0913264C2A570CF700D06198 /* PreviousRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913264B2A570CF700D06198 /* PreviousRequestsViewController.swift */; };
 		0981468A2A5A36B80084654A /* HomeServicesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098146892A5A36B80084654A /* HomeServicesEnum.swift */; };
 		0981468C2A5A3D070084654A /* HealthServicesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0981468B2A5A3D070084654A /* HealthServicesEnum.swift */; };
+		0981468F2A5A68F20084654A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0981468E2A5A68F20084654A /* LoginViewController.swift */; };
+		098146922A5A6B1C0084654A /* requests.json in Resources */ = {isa = PBXBuildFile; fileRef = 098146912A5A6B1C0084654A /* requests.json */; };
+		098146942A5A6B3B0084654A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098146932A5A6B3B0084654A /* Request.swift */; };
+		098146972A5A6B9A0084654A /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098146962A5A6B9A0084654A /* JsonHelper.swift */; };
 		098E1BA42A4CDFE400E1ACAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098E1BA32A4CDFE400E1ACAA /* HomeViewController.swift */; };
 		098E1BA62A4CE2DE00E1ACAA /* ServiceRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098E1BA52A4CE2DE00E1ACAA /* ServiceRequestViewController.swift */; };
 		0993C99D2A4EFA6D000C0528 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993C99C2A4EFA6D000C0528 /* HealthViewController.swift */; };
@@ -25,6 +29,10 @@
 		0913264B2A570CF700D06198 /* PreviousRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRequestsViewController.swift; sourceTree = "<group>"; };
 		098146892A5A36B80084654A /* HomeServicesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServicesEnum.swift; sourceTree = "<group>"; };
 		0981468B2A5A3D070084654A /* HealthServicesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthServicesEnum.swift; sourceTree = "<group>"; };
+		0981468E2A5A68F20084654A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		098146912A5A6B1C0084654A /* requests.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = requests.json; sourceTree = "<group>"; };
+		098146932A5A6B3B0084654A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		098146962A5A6B9A0084654A /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 		098E1BA32A4CDFE400E1ACAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		098E1BA52A4CE2DE00E1ACAA /* ServiceRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestViewController.swift; sourceTree = "<group>"; };
 		0993C99C2A4EFA6D000C0528 /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +75,22 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
+		098146902A5A6AB80084654A /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				098146932A5A6B3B0084654A /* Request.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		098146952A5A6B850084654A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				098146962A5A6B9A0084654A /* JsonHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		09BF2C6D2A49B31B009F2EA1 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +110,9 @@
 		09BF2C782A49B31B009F2EA1 /* seniorservice */ = {
 			isa = PBXGroup;
 			children = (
+				098146912A5A6B1C0084654A /* requests.json */,
+				098146952A5A6B850084654A /* Helpers */,
+				098146902A5A6AB80084654A /* DB */,
 				0981468D2A5A3F980084654A /* Delegates */,
 				098146882A5A36920084654A /* Constants */,
 				09BF2C8F2A49B4D3009F2EA1 /* Controllers */,
@@ -105,6 +132,7 @@
 				09BF2C7D2A49B31B009F2EA1 /* FirstViewController.swift */,
 				0993C99C2A4EFA6D000C0528 /* HealthViewController.swift */,
 				098E1BA52A4CE2DE00E1ACAA /* ServiceRequestViewController.swift */,
+				0981468E2A5A68F20084654A /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -168,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09BF2C862A49B31D009F2EA1 /* LaunchScreen.storyboard in Resources */,
+				098146922A5A6B1C0084654A /* requests.json in Resources */,
 				09BF2C922A4B626D009F2EA1 /* Assets.xcassets in Resources */,
 				09BF2C812A49B31B009F2EA1 /* Main.storyboard in Resources */,
 			);
@@ -182,12 +211,15 @@
 			files = (
 				09BF2C7E2A49B31B009F2EA1 /* FirstViewController.swift in Sources */,
 				09BF2C7A2A49B31B009F2EA1 /* AppDelegate.swift in Sources */,
+				098146942A5A6B3B0084654A /* Request.swift in Sources */,
 				09BF2C7C2A49B31B009F2EA1 /* SceneDelegate.swift in Sources */,
 				0981468A2A5A36B80084654A /* HomeServicesEnum.swift in Sources */,
 				098E1BA42A4CDFE400E1ACAA /* HomeViewController.swift in Sources */,
 				0913264C2A570CF700D06198 /* PreviousRequestsViewController.swift in Sources */,
 				0993C99D2A4EFA6D000C0528 /* HealthViewController.swift in Sources */,
 				0981468C2A5A3D070084654A /* HealthServicesEnum.swift in Sources */,
+				098146972A5A6B9A0084654A /* JsonHelper.swift in Sources */,
+				0981468F2A5A68F20084654A /* LoginViewController.swift in Sources */,
 				098E1BA62A4CE2DE00E1ACAA /* ServiceRequestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

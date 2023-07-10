@@ -29,6 +29,14 @@ class HealthViewController: UIViewController {
         goToServiceRequestFor(service: HealthServicesEnum.Physiotherapy)
     }
     
+    @IBAction func SpeechTherapyoButton(_ sender: UIButton) {
+        goToServiceRequestFor(service: HealthServicesEnum.SpeechTherapy)
+    }
+    
+    @IBAction func PersonalCareButton(_ sender: UIButton) {
+        goToServiceRequestFor(service: HealthServicesEnum.PersonalCare)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == sequeIdentifier,
             let destinationVC = segue.destination as? ServiceRequestViewController {

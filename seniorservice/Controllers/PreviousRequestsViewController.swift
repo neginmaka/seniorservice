@@ -10,19 +10,35 @@ import UIKit
 class PreviousRequestsViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
-    // TODO: Fetch the user requests from server to populate proper list for the previous requests
-    let data = [("Plumbing Jun 7", "Pending"), ("Painting Feb 24", "Done"), ("Physio May 11", "Cancelled")]
-
+    var data: [Request]! = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        data = loadData()
+        
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    func loadData() -> [Request] {
+        let jsonHelper = JsonHelper()
+        let requests = jsonHelper.loadRequestsFromFile()!
+
+        return requests
+    }
+}
+
+class RequestCell: UITableViewCell {
+    @IBOutlet weak var service: UILabel!
+    @IBOutlet weak var status: UILabel!
+    @IBOutlet weak var createdDate: UILabel!
+
 }
 
 extension PreviousRequestsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("you tapped me!")
+        // no op
     }
 }
 
@@ -32,10 +48,11 @@ extension PreviousRequestsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "requestCustomCell", for: indexPath) as! RequestCell
         let item = data[indexPath.row]
-        cell.textLabel?.text = item.0
-        cell.detailTextLabel?.text = item.1
+        cell.service?.text = item.service
+        cell.status?.text = item.status
+        cell.createdDate?.text = item.createdDate
         return cell
     }
 }
