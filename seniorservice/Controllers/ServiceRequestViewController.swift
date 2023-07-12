@@ -21,7 +21,8 @@ class ServiceRequestViewController: UIViewController {
         categoryNameLabel.text = categoryName
     }
     
-    @IBAction func SubmitButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "Submit", sender: self)
-    }
+	@IBAction func SubmitButton(_ sender: Any) {
+		//        self.performSegue(withIdentifier: "Submit", sender: self)
+		self.navigationController?.popToRootViewController(animated: true)
+	}
 }
