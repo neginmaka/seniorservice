@@ -83,18 +83,18 @@
                     <nil key="highlightedColor"/>
                 </label>
             </objects>
-            <point key="canvasLocation" x="1057.2519083969464" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="367" y="-27"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="PMF-D5-Dvv">
             <objects>
                 <viewController storyboardIdentifier="ChooseCatergoryController" id="L0X-rf-Jzg" customClass="FirstViewController" customModule="seniorservice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="67e-Wf-jza">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJ5-rK-ii7">
-                                <rect key="frame" x="81.333333333333329" y="129" width="230.33333333333337" height="31.333333333333343"/>
+                                <rect key="frame" x="81.333333333333329" y="173" width="230.33333333333337" height="31.333333333333343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="CJ5-rK-ii7" secondAttribute="height" multiplier="228:31" id="ZkF-ho-OjO"/>
                                 </constraints>
@@ -103,7 +103,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="top" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="enU-Ou-JbK">
-                                <rect key="frame" x="137.33333333333334" y="327" width="118.66666666666666" height="129"/>
+                                <rect key="frame" x="137.33333333333334" y="361.66666666666669" width="118.66666666666666" height="129"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOb-yo-Mqj">
                                         <rect key="frame" x="0.0" y="0.0" width="118.66666666666667" height="20.333333333333332"/>
@@ -127,7 +127,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="On8-MY-M0f">
-                                        <rect key="frame" x="0.0" y="94.666666666666686" width="118.66666666666667" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="94.666666666666629" width="118.66666666666667" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="cross.case.fill" catalog="system" title="Health" imagePadding="15">
                                             <backgroundConfiguration key="background">
@@ -143,7 +143,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffx-P3-lr0">
-                                <rect key="frame" x="110" y="683.66666666666663" width="165" height="34.333333333333371"/>
+                                <rect key="frame" x="110" y="669.66666666666663" width="165" height="34.333333333333371"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Previous Requests">
@@ -178,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMM-Gq-R9W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3942.7480916030531" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="2810" y="-27"/>
         </scene>
         <!--Home services-->
         <scene sceneID="mwE-IU-y8v">
@@ -276,6 +276,7 @@
                     <tabBarItem key="tabBarItem" title="Home services" image="homekit" catalog="system" id="tWa-JV-oEV">
                         <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="d4s-lz-MZz"/>
                     <connections>
                         <outlet property="paintingButton" destination="AeA-L0-Ap7" id="wSd-Ar-6ea"/>
                         <outlet property="plumbingButton" destination="dYC-5K-8Xg" id="6cE-lA-VuQ"/>
@@ -284,7 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iX1-H0-NNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4602" y="-563"/>
+            <point key="canvasLocation" x="3485" y="-775"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iMK-RJ-8g1">
@@ -305,7 +306,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BB5-r8-B1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2046.564885496183" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="1131" y="-27"/>
         </scene>
         <!--Health Services-->
         <scene sceneID="gPc-fP-fXE">
@@ -411,7 +412,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vo3-HJ-TRP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4784" y="227"/>
+            <point key="canvasLocation" x="3579" y="706"/>
         </scene>
         <!--Service Request View Controller-->
         <scene sceneID="xPo-yk-npD">
@@ -469,7 +470,7 @@
                                     <constraint firstAttribute="width" constant="49" id="tau-8V-mW7"/>
                                 </constraints>
                             </switch>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="$" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S2J-JU-ynS">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="$" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S2J-JU-ynS" userLabel="Small Text View">
                                 <rect key="frame" x="153" y="486" width="166" height="34"/>
                                 <color key="backgroundColor" red="0.88704251821595004" green="0.88704251821595004" blue="0.88704251821595004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -509,11 +510,10 @@
                                     <action selector="SubmitButton:" destination="2rS-mp-KMB" eventType="touchUpInside" id="qCg-24-qMV"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5zI-6P-Lcb">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5zI-6P-Lcb" userLabel="Large Text View">
                                 <rect key="frame" x="79" y="327" width="245" height="128"/>
                                 <color key="backgroundColor" red="0.88705134389999996" green="0.8870514035" blue="0.88705134389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="YlM-1d-Arq"/>
                                     <constraint firstAttribute="width" constant="245" id="hG8-rR-vfh"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.</string>
@@ -562,7 +562,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M14-eu-fxK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5539.6946564885493" y="-64.08450704225352"/>
+            <point key="canvasLocation" x="4366" y="-37"/>
         </scene>
         <!--Choose a category-->
         <scene sceneID="Jbw-I3-WVV">
@@ -583,14 +583,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xed-OQ-u5O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2998" y="-27"/>
+            <point key="canvasLocation" x="1943" y="-27"/>
         </scene>
         <!--Previous Requests View Controller-->
         <scene sceneID="1FJ-Np-fof">
             <objects>
                 <viewController id="YMS-gL-BM1" customClass="PreviousRequestsViewController" customModule="seniorservice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nJr-Q2-rDK">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bqA-ZR-464">
@@ -682,12 +682,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="932-Qo-g05" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3942.7480916030531" y="716.90140845070425"/>
+            <point key="canvasLocation" x="2810" y="706"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="b8j-BM-gHt"/>
-        <segue reference="Wdf-fs-hJo"/>
+        <segue reference="qTT-zb-654"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bed.double.circle.fill" catalog="system" width="128" height="123"/>
