@@ -502,7 +502,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="SubmitButton:" destination="2rS-mp-KMB" eventType="touchUpInside" id="1gl-Ik-gQ0"/>
+                                    <action selector="submitButton:" destination="2rS-mp-KMB" eventType="touchUpInside" id="6qo-UF-KG1"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5zI-6P-Lcb" userLabel="Large Text View">

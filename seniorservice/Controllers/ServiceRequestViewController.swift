@@ -21,17 +21,24 @@ class ServiceRequestViewController: UIViewController {
         super.viewDidLoad()
         serviceNameLabel.text = serviceName
         categoryNameLabel.text = categoryName
+        
+        //        descriptionTextView.delegate = self
+        //        budgetField.delegate = self
     }
     
     @IBAction func submitButton(_ sender: Any) {
         
+        var isSuccess:Bool
+        isSuccess = true
+        
         // TODO: Create a Request object based on user input
         
-//        var request = Request()
-//            request.description = descriptionTextField.text
-//            request.createdDate = Date()
-//            request.status = .created
-        }
+        //        var request = Request()
+        //            request.description = descriptionTextField.text
+        //            request.createdDate = Date()
+        //            request.status = .created
+        
+        
         
         // TODO: (Temporary until DB is created) Load all requests and serialize them to an array of Requests
         
@@ -40,16 +47,17 @@ class ServiceRequestViewController: UIViewController {
         // TODO: Push the new Request list to DB aka the jsonFile
         
         // TODO: Create a status check for the push:
-        // TODO: if all successful: show success pop up and navigate to root
-        // Show popup
-        let alertController = UIAlertController(title: "Request Sent", message: "Your request was successfully sent", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Go back to home", style: .default, handler: { _ in
-            // Navigate to root view
-            self.navigationController?.popToRootViewController(animated: true)
-        }))
         
-        present(alertController, animated: true, completion: nil)
-        
-        // TODO: if failed: show failed pop up and navigate to the same view
-    
-    }
+        if(isSuccess) {
+            let alertController = UIAlertController(title: "Request Sent", message: "Your request was successfully sent", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Go back to home", style: .default, handler: { _ in
+                self.navigationController?.popToRootViewController(animated: true)
+            }))
+            present(alertController, animated: true, completion: nil)
+        } else {
+            let alertController = UIAlertController(title: "Request Sent", message: "There was an error with the request. Try again later", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Go back to request screen", style: .default, handler: { _ in
+            }))
+            present(alertController, animated: true, completion: nil)
+        }
+    }}
