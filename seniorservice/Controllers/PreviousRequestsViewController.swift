@@ -10,7 +10,7 @@ import UIKit
 class PreviousRequestsViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
-    var data: [Request]! = []
+    var data: [Request] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +23,13 @@ class PreviousRequestsViewController: UIViewController {
     
     func loadData() -> [Request] {
         let jsonHelper = JsonHelper()
-        let requests = jsonHelper.loadRequestsFromFile()!
-
-        return requests
+		// be careful with the force unwraps
+		if let requests = jsonHelper.loadRequestsFromFile() {
+			return requests
+		} else {
+			// show an alert or something else and return an empty list
+			return [Request]()
+		}
     }
 }
 

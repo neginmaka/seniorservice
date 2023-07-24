@@ -27,7 +27,17 @@ class ServiceRequestViewController: UIViewController {
     }
     
     @IBAction func submitButton(_ sender: Any) {
-        
+		var newRequestToBeCreated = Request(category: self.categoryName, service: self.serviceName, budget: 450.0, description: "Anything just to test", isUrgent: true, createdDate: Date().formatted(), status: "Not Done")
+
+		let jsonHelper = JsonHelper()
+		guard var requests = jsonHelper.loadRequestsFromFile() else {
+			// handle any errors
+			return
+		}
+		requests.append(newRequestToBeCreated)
+
+		jsonHelper.saveRequestsToFile(requests: requests)
+
         var isSuccess:Bool
         isSuccess = true
         

@@ -22,7 +22,7 @@
 		09BF2C7E2A49B31B009F2EA1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF2C7D2A49B31B009F2EA1 /* FirstViewController.swift */; };
 		09BF2C812A49B31B009F2EA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BF2C7F2A49B31B009F2EA1 /* Main.storyboard */; };
 		09BF2C862A49B31D009F2EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BF2C842A49B31D009F2EA1 /* LaunchScreen.storyboard */; };
-		09BF2C922A4B626D009F2EA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BF2C912A4B626D009F2EA1 /* Assets.xcassets */; };
+		A004DE872A68A78F00AEDA1B /* Comments in Resources */ = {isa = PBXBuildFile; fileRef = A004DE862A68A78F00AEDA1B /* Comments */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 		09BF2C802A49B31B009F2EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09BF2C852A49B31D009F2EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09BF2C872A49B31D009F2EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09BF2C912A4B626D009F2EA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Desktop/Quiz/Quiz/Assets.xcassets; sourceTree = "<group>"; };
+		A004DE862A68A78F00AEDA1B /* Comments */ = {isa = PBXFileReference; lastKnownFileType = text; path = Comments; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +111,13 @@
 			isa = PBXGroup;
 			children = (
 				098146912A5A6B1C0084654A /* requests.json */,
+				A004DE862A68A78F00AEDA1B /* Comments */,
 				098146952A5A6B850084654A /* Helpers */,
 				098146902A5A6AB80084654A /* DB */,
 				0981468D2A5A3F980084654A /* Delegates */,
 				098146882A5A36920084654A /* Constants */,
 				09BF2C8F2A49B4D3009F2EA1 /* Controllers */,
 				09BF2C7F2A49B31B009F2EA1 /* Main.storyboard */,
-				09BF2C912A4B626D009F2EA1 /* Assets.xcassets */,
 				09BF2C842A49B31D009F2EA1 /* LaunchScreen.storyboard */,
 				09BF2C872A49B31D009F2EA1 /* Info.plist */,
 			);
@@ -197,7 +197,7 @@
 			files = (
 				09BF2C862A49B31D009F2EA1 /* LaunchScreen.storyboard in Resources */,
 				098146922A5A6B1C0084654A /* requests.json in Resources */,
-				09BF2C922A4B626D009F2EA1 /* Assets.xcassets in Resources */,
+				A004DE872A68A78F00AEDA1B /* Comments in Resources */,
 				09BF2C812A49B31B009F2EA1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

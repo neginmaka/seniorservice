@@ -1,0 +1,12 @@
+
+FIXES
+
+1 - Remove all the force unwraps
+2 - Make a decision of what you want to do with the tabs
+3 - Make adjustments to the function of saving that we created
+4 - Handle the Double on the Request and other details that might break from user input
+
+IMPROVEMENTS
+
+5 - Try to make the json helper more independent if you plan on keeping using it.
+6 - On the budget, you could use a mask ( $ 0.00 or $ 000), but it definitely should have maximum one line

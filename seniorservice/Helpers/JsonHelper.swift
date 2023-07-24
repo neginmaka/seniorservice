@@ -31,12 +31,12 @@ class JsonHelper {
 
 
     func saveRequestsToFile(requests: [Request]) {
+		guard let fileURL = Bundle.main.url(forResource: "requests", withExtension: "json") else {
+			print("Error accessing requests.json file.")
+			return
+		}
+
         do {
-            guard let fileURL = Bundle.main.url(forResource: "requests", withExtension: "json") else {
-                print("Error accessing requests.json file.")
-                return
-            }
-            
             let encoder = JSONEncoder()
             encoder.outputFormatting = .prettyPrinted
             let data = try encoder.encode(requests)
