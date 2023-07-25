@@ -7,13 +7,22 @@
 
 import Foundation
 
-struct Request: Codable {
-    let category: String
-    let service: String
-    let budget: Double
-    let description: String
-    let isUrgent: Bool
-    let createdDate: String
-    let status: String
-}
+class Request: Codable {
+    var category: String
+    var service: String
+    var budget: Double
+    var description: String
+    var isUrgent: Bool
+    var createdDate: String
+    var status: String
 
+    init(category: String, service: String, budget: Double, description: String, isUrgent: Bool, createdDate: String, status: String) {
+        self.category = category
+        self.service = service
+        self.budget = budget
+        self.description = description
+        self.isUrgent = isUrgent
+        self.createdDate = createdDate
+        self.status = status
+    }
+}

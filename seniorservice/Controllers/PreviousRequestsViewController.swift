@@ -27,7 +27,8 @@ class PreviousRequestsViewController: UIViewController {
 		if let requests = jsonHelper.loadRequestsFromFile() {
 			return requests
 		} else {
-			// show an alert or something else and return an empty list
+            // Handle the error gracefully, for example, show an alert.
+            print("Error loading requests from file.")
 			return [Request]()
 		}
     }
@@ -56,7 +57,10 @@ extension PreviousRequestsViewController: UITableViewDataSource {
         let item = data[indexPath.row]
         cell.service?.text = item.service
         cell.status?.text = item.status
-        cell.createdDate?.text = item.createdDate
+        cell.createdDate.text = item.createdDate
         return cell
+
     }
 }
+
+
