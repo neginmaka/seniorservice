@@ -44,6 +44,9 @@ class ServiceRequestViewController: UIViewController, UITextViewDelegate, UIText
         
     
     @IBAction func submitButton(_ sender: Any) {
+        
+        self.navigationController?.popToRootViewController(animated: true)
+        
         // Validate the budget input
                 if let budgetText = budgetTextField.text, let budget = Double(budgetText) {
                     // The budget is a valid Double value

@@ -123,7 +123,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="Tqa-Ne-f5e" kind="show" id="bLq-XS-5Ue"/>
+                                            <segue destination="Tqa-Ne-f5e" kind="show" id="AuU-Ee-BCb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="On8-MY-M0f">
@@ -137,7 +137,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="oEv-3U-ySt" kind="show" id="Ol9-oD-dgP"/>
+                                            <segue destination="oEv-3U-ySt" kind="show" id="HAO-sc-dls"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -174,7 +174,7 @@
             </objects>
             <point key="canvasLocation" x="2810" y="-27"/>
         </scene>
-        <!--Home services-->
+        <!--Home View Controller-->
         <scene sceneID="mwE-IU-y8v">
             <objects>
                 <viewController storyboardIdentifier="HomeServiceController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tqa-Ne-f5e" customClass="HomeViewController" customModule="seniorservice" customModuleProvider="target" sceneMemberID="viewController">
@@ -267,9 +267,6 @@
                             <constraint firstItem="9xw-P5-KJv" firstAttribute="leading" secondItem="YFY-Vs-u74" secondAttribute="leading" constant="105" id="zLY-su-vrj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home services" image="homekit" catalog="system" id="tWa-JV-oEV">
-                        <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
                     <navigationItem key="navigationItem" id="d4s-lz-MZz"/>
                     <connections>
                         <outlet property="paintingButton" destination="AeA-L0-Ap7" id="wSd-Ar-6ea"/>
@@ -279,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iX1-H0-NNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3485" y="-775"/>
+            <point key="canvasLocation" x="4411.4503816793895" y="-775.35211267605632"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iMK-RJ-8g1">
@@ -294,15 +291,15 @@
                     </tabBar>
                     <connections>
                         <segue destination="0VI-Bj-CrU" kind="relationship" relationship="viewControllers" id="b3k-mQ-uNi"/>
-                        <segue destination="Tqa-Ne-f5e" kind="relationship" relationship="viewControllers" id="RT0-51-Fc8"/>
-                        <segue destination="oEv-3U-ySt" kind="relationship" relationship="viewControllers" id="cCN-aw-ilI"/>
+                        <segue destination="Fc6-Vv-sQY" kind="relationship" relationship="viewControllers" id="RT0-51-Fc8"/>
+                        <segue destination="C2s-MS-y9t" kind="relationship" relationship="viewControllers" id="cCN-aw-ilI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BB5-r8-B1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1131" y="-27"/>
         </scene>
-        <!--Health Services-->
+        <!--Health View Controller-->
         <scene sceneID="gPc-fP-fXE">
             <objects>
                 <viewController storyboardIdentifier="HealthServiceController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oEv-3U-ySt" customClass="HealthViewController" customModule="seniorservice" customModuleProvider="target" sceneMemberID="viewController">
@@ -395,9 +392,6 @@
                             <constraint firstItem="CUj-d9-U68" firstAttribute="top" secondItem="Gfs-fE-fGx" secondAttribute="top" constant="70" id="sUw-Yb-CKc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Health Services" image="cross.case" catalog="system" id="vhg-dP-6jX">
-                        <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
                     <navigationItem key="navigationItem" id="ghD-eP-EZA"/>
                     <connections>
                         <outlet property="nursingButton" destination="Fgn-wc-mu2" id="ID8-cK-gP8"/>
@@ -407,7 +401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vo3-HJ-TRP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3636" y="799"/>
+            <point key="canvasLocation" x="4393" y="799"/>
         </scene>
         <!--Service Request View Controller-->
         <scene sceneID="xPo-yk-npD">
@@ -640,7 +634,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous Requests" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEl-Ml-BzH">
-                                <rect key="frame" x="75" y="124" width="230.33333333333337" height="31.333333333333343"/>
+                                <rect key="frame" x="75.000000000000014" y="123.99999999999999" width="230.33333333333337" height="31.333333333333329"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -662,13 +656,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="932-Qo-g05" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4547" y="830"/>
+            <point key="canvasLocation" x="5472.5190839694651" y="829.57746478873241"/>
+        </scene>
+        <!--Home services-->
+        <scene sceneID="rxN-gG-T4t">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fc6-Vv-sQY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home services" image="homekit" catalog="system" id="tWa-JV-oEV">
+                        <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Men-VZ-YAU"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nOD-Xs-Krc">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tqa-Ne-f5e" kind="relationship" relationship="rootViewController" id="TQj-fo-Ron"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tjn-Z7-uGi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3484.7328244274809" y="-775.35211267605632"/>
+        </scene>
+        <!--Health Services-->
+        <scene sceneID="Qe7-Mh-yIP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C2s-MS-y9t" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Health Services" image="cross.case" catalog="system" id="vhg-dP-6jX">
+                        <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="oaz-ne-6x0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pxq-Re-Uva">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oEv-3U-ySt" kind="relationship" relationship="rootViewController" id="s3o-NU-K76"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ibd-TR-rU3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3635.8778625954196" y="798.59154929577471"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uJc-d3-OjC"/>
-        <segue reference="Ol9-oD-dgP"/>
-        <segue reference="bLq-XS-5Ue"/>
+        <segue reference="b8j-BM-gHt"/>
+        <segue reference="HAO-sc-dls"/>
+        <segue reference="AuU-Ee-BCb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bed.double.circle.fill" catalog="system" width="128" height="123"/>
