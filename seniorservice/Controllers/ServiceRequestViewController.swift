@@ -27,7 +27,13 @@ class ServiceRequestViewController: UIViewController, UITextViewDelegate, UIText
         budgetTextField.delegate = self
         
         // Initialize newRequestToBeCreated here
-        newRequestToBeCreated = Request(category: self.categoryName, service: self.serviceName, budget: 450.0, description: self.descriptionTextView.text, isUrgent: true, createdDate: Date().formatted(), status: "Not Done")
+                        let currentDate = Date()
+                        let dateFormatter = DateFormatter()
+                        dateFormatter.dateFormat = "yyyy-MM-dd"
+                        let formattedDate = dateFormatter.string(from: currentDate)
+        
+        // Initialize newRequestToBeCreated here
+        newRequestToBeCreated = Request(category: self.categoryName, service: self.serviceName, budget: 450.0, description: self.descriptionTextView.text, isUrgent: true, createdDate: formattedDate, status: "Not Done")
         
         // for tapping
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
