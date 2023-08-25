@@ -27,7 +27,7 @@ class PreviousRequestsViewController: UIViewController {
 		if let requests = jsonHelper.loadRequestsFromFile() {
 			return requests
 		} else {
-            // Handle the error gracefully, for example, show an alert.
+            // Handle the error , for example, show an alert.
             print("Error loading requests from file.")
 			return [Request]()
 		}
