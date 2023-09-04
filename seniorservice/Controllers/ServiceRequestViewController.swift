@@ -13,11 +13,23 @@ class ServiceRequestViewController: UIViewController, UITextViewDelegate, UIText
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var budgetTextField: UITextField!
     @IBOutlet var urgentSwitch: UISwitch!
+
+    let local : Locale = .current
     
     // Service Name and Category name update dynamically based on the user selection
     var serviceName: String!
     var categoryName: String!
-    var newRequestToBeCreated: Request!
+    
+    // Initialize newRequestToBeCreated here
+    var newRequestToBeCreated = Request(
+        category: "",
+        service: "",
+        budget: 0,
+        description: "",
+        isUrgent: false,
+        createdDate: "",
+        status: ServiceStatusEnum.New.rawValue
+    )
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,39 +37,24 @@ class ServiceRequestViewController: UIViewController, UITextViewDelegate, UIText
         categoryNameLabel.text = categoryName
         descriptionTextView.delegate = self
         budgetTextField.delegate = self
+        budgetTextField.placeholder = local.currencySymbol!
         
-        // Initialize newRequestToBeCreated here
-        let currentDate = Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        let formattedDate = dateFormatter.string(from: currentDate)
-		self.validateBudgetInput()
-        // Initialize newRequestToBeCreated here
-
-//
-//        if let budgetText = budgetTextField.text, let budget = Double(budgetText) {
-//            newRequestToBeCreated = Request(category: self.categoryName, service: self.serviceName, budget: budget, description: self.descriptionTextView.text, isUrgent: true, createdDate: formattedDate, status: "Not Done")
-//        } else {
-//            // Set a default budget value if the budgetTextField is empty or invalid
-//            newRequestToBeCreated = Request(category: self.categoryName, service: self.serviceName, budget: 0.0, description: self.descriptionTextView.text, isUrgent: true, createdDate: formattedDate, status: "Not Done")
-//            budgetTextField.text = "$0.00" // Set the initial text with the $0.00 mask
-//        }
+		// Guarding the bugdet input field against non digits chars
+        self.guardBudgetInputForNonDigits()
         
         // for tapping
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
     }
 
-	func validateBudgetInput() {
-		guard var budgetValue = budgetTextField.text else {
+	func guardBudgetInputForNonDigits() {
+		guard let budgetValue = budgetTextField.text else {
 			return
 		}
 		let valueString = budgetValue.filter {
 			CharacterSet(charactersIn: "0123456789.").isSuperset(of: CharacterSet(charactersIn: String($0)))
 		}.trimmingCharacters(in: .whitespacesAndNewlines)
-		print("---> valueString: \(valueString) ")
-		// change the hardcoded dollar sign into the locale currency
-		// filter any periods after the first one
-		budgetTextField.text = "$ " + valueString
+
+        budgetTextField.text = valueString
 	}
 
     // Handle tapping to dismiss keyboard
@@ -68,29 +65,23 @@ class ServiceRequestViewController: UIViewController, UITextViewDelegate, UIText
     // UITextFieldDelegate method to handle end of editing
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == budgetTextField {
-            // No need to format the budgetTextField here
-            // The budget will be formatted just before submission in the submitButton function
         }
     }
+    
 	@IBAction func budgetValueChanged(_ sender: Any) {
-		self.validateBudgetInput()
+		self.guardBudgetInputForNonDigits()
 	}
-	
     
     @IBAction func switchDidChange(_ sender: UISwitch) {
         // Update the isUrgent property of the newRequestToBeCreated object
         newRequestToBeCreated.isUrgent = sender.isOn
     }
     
-    
     @IBAction func submitButton(_ sender: Any) {
-        
         // Validate the budget input
         if let budgetText = budgetTextField.text, let budget = Double(budgetText) {
-            // The budget is a valid Double value
             newRequestToBeCreated.budget = budget
-            // Format the budget amount with $0.00 mask and update the budgetTextField text
-            let formattedBudget = String(format: "$%.2f", budget)
+            let formattedBudget = String(format: "%.2f", budget)
             budgetTextField.text = formattedBudget
         } else {
             // Show an alert to the user that the budget input is invalid
@@ -100,17 +91,13 @@ class ServiceRequestViewController: UIViewController, UITextViewDelegate, UIText
             return // Stop the submission process if the budget is invalid
         }
         
-        // Update the isUrgent property based on the switch value (redundant since it's already updated in switchDidChange)
         newRequestToBeCreated.isUrgent = urgentSwitch.isOn
+        newRequestToBeCreated.description = descriptionTextView.text
+        newRequestToBeCreated.service = serviceName
+        newRequestToBeCreated.category = categoryName
+        newRequestToBeCreated.createdDate = getCurrentFormattedDate()
         
-        let jsonHelper = JsonHelper()
-        guard var requests = jsonHelper.loadRequestsFromFile() else {
-            // handle any errors
-            return
-        }
-        requests.append(newRequestToBeCreated)
-        
-        jsonHelper.saveRequestsToFile(requests: requests)
+        writeToDB(newRequestToBeCreated: newRequestToBeCreated)
         
         // Since we don't have a real server response, we can assume the request was successful
         let alertController = UIAlertController(title: "Request Sent", message: "Your request was successfully sent", preferredStyle: .alert)
@@ -128,69 +115,21 @@ extension ServiceRequestViewController /*: UITextFieldDelegate*/ {
     }
 }
 
-// please try to understand before you use it
-
-class CurrencyTextField: UITextField {
-
-	/// The numbers that have been entered in the text field
-	private var enteredNumbers = ""
-
-	private var didBackspace = false
-
-	var locale: Locale = .current
-
-	override init(frame: CGRect) {
-		super.init(frame: frame)
-		commonInit()
-	}
-
-	required init?(coder: NSCoder) {
-		super.init(coder: coder)
-		commonInit()
-	}
-
-	private func commonInit() {
-		addTarget(self, action: #selector(editingChanged), for: .editingChanged)
-	}
-
-	override func deleteBackward() {
-		enteredNumbers = String(enteredNumbers.dropLast())
-		text = enteredNumbers.asCurrency(locale: locale)
-		// Call super so that the .editingChanged event gets fired, but we need to handle it differently, so we set the `didBackspace` flag first
-		didBackspace = true
-		super.deleteBackward()
-	}
-
-	@objc func editingChanged() {
-		defer {
-			didBackspace = false
-			text = enteredNumbers.asCurrency(locale: locale)
-		}
-
-		guard didBackspace == false else { return }
-
-		if let lastEnteredCharacter = text?.last, lastEnteredCharacter.isNumber {
-			enteredNumbers.append(lastEnteredCharacter)
-		}
-	}
+private func getCurrentFormattedDate() -> String {
+    let currentDate = Date()
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd"
+    let formattedDate = dateFormatter.string(from: currentDate)
+    return formattedDate
 }
 
-private extension Formatter {
-	static let currency: NumberFormatter = {
-		let formatter = NumberFormatter()
-		formatter.numberStyle = .currency
-		return formatter
-	}()
+private func writeToDB(newRequestToBeCreated: Request) {
+    // TODO: Replace with real DB connections
+    let jsonHelper = JsonHelper()
+    guard var requests = jsonHelper.loadRequestsFromFile() else {
+        // handle any errors
+        return
+    }
+    requests.append(newRequestToBeCreated)
+    jsonHelper.saveRequestsToFile(requests: requests)
 }
-
-private extension String {
-	func asCurrency(locale: Locale) -> String? {
-		Formatter.currency.locale = locale
-		if self.isEmpty {
-			return Formatter.currency.string(from: NSNumber(value: 0))
-		} else {
-			return Formatter.currency.string(from: NSNumber(value: (Double(self) ?? 0) / 100))
-		}
-	}
-}
-

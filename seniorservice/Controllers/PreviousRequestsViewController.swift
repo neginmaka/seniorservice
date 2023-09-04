@@ -12,25 +12,27 @@ class PreviousRequestsViewController: UIViewController {
     
     var data: [Request] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         data = loadData()
-        
+
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // Reload your table view data here
+        tableView.reloadData()
     }
+
     
     func loadData() -> [Request] {
         let jsonHelper = JsonHelper()
-		// be careful with the force unwraps
-		if let requests = jsonHelper.loadRequestsFromFile() {
-			return requests
-		} else {
+        if let requests = jsonHelper.loadRequestsFromFile() {
+            return requests
+        } else {
             // Handle the error , for example, show an alert.
             print("Error loading requests from file.")
-			return [Request]()
-		}
+            return [Request]()
+        }
     }
 }
 
@@ -59,8 +61,5 @@ extension PreviousRequestsViewController: UITableViewDataSource {
         cell.status?.text = item.status
         cell.createdDate.text = item.createdDate
         return cell
-
     }
 }
-
-

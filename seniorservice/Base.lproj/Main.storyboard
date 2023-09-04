@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22113.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hjg-F7-zkd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hjg-F7-zkd">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -176,16 +175,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0bf-PF-mkR">
-                                <rect key="frame" x="126.00000000000001" y="307.33333333333331" width="141.33333333333337" height="237.66666666666669"/>
+                                <rect key="frame" x="124.66666666666667" y="307.33333333333331" width="143.66666666666663" height="237.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick One" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVo-wk-2ct">
-                                        <rect key="frame" x="0.0" y="0.0" width="141.33333333333334" height="20.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="143.66666666666666" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYC-5K-8Xg">
-                                        <rect key="frame" x="0.0" y="40.333333333333371" width="141.33333333333334" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="40.333333333333371" width="143.66666666666666" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="wrench.and.screwdriver.fill" catalog="system" title="Plumbing" imagePadding="15">
                                             <backgroundConfiguration key="background">
@@ -199,7 +198,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6V4-18-bqN">
-                                        <rect key="frame" x="0.0" y="94.666666666666686" width="141.33333333333334" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="94.666666666666686" width="143.66666666666666" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="powerplug.fill" catalog="system" title="Electrical" imagePadding="15">
                                             <backgroundConfiguration key="background">
@@ -213,7 +212,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeA-L0-Ap7">
-                                        <rect key="frame" x="0.0" y="149" width="141.33333333333334" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="149" width="143.66666666666666" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Painting" imagePadding="15">
                                             <imageReference key="image" image="paintbrush.fill" catalog="system" variableValue="0.0"/>
@@ -228,7 +227,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yc2-z2-m3s">
-                                        <rect key="frame" x="0.0" y="203.33333333333337" width="141.33333333333334" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="203.33333333333337" width="143.66666666666666" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="person.2.fill" catalog="system" title="General" imagePadding="15">
                                             <backgroundConfiguration key="background">
@@ -300,16 +299,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Y8Q-V3-TYd">
-                                <rect key="frame" x="95.333333333333329" y="307.33333333333331" width="202.33333333333337" height="237.66666666666669"/>
+                                <rect key="frame" x="97.333333333333329" y="307.33333333333331" width="198.33333333333337" height="237.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick One" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohq-fT-JcK">
-                                        <rect key="frame" x="0.0" y="0.0" width="202.33333333333334" height="20.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="198.33333333333334" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgn-wc-mu2">
-                                        <rect key="frame" x="0.0" y="40.333333333333371" width="202.33333333333334" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="40.333333333333371" width="198.33333333333334" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="cross.fill" catalog="system" title="Nursing" imagePadding="15">
                                             <backgroundConfiguration key="background">
@@ -323,7 +322,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jv-RW-NbT">
-                                        <rect key="frame" x="0.0" y="94.666666666666686" width="202.33333333333334" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="94.666666666666686" width="198.33333333333334" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="bed.double.circle.fill" catalog="system" title="Physiotherapy" imagePadding="15">
                                             <backgroundConfiguration key="background">
@@ -337,7 +336,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fg-XT-ULh">
-                                        <rect key="frame" x="0.0" y="149" width="202.33333333333334" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="149" width="198.33333333333334" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Speech Therapy" imagePadding="15">
                                             <imageReference key="image" image="person.2.wave.2.fill" catalog="system" variableValue="0.0"/>
@@ -352,7 +351,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQX-xz-RyZ">
-                                        <rect key="frame" x="0.0" y="203.33333333333337" width="202.33333333333334" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="203.33333333333337" width="198.33333333333334" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="cross.circle" catalog="system" title="Personal Care" imagePadding="15">
                                             <backgroundConfiguration key="background">
@@ -438,7 +437,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ics-A6-jmO">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ics-A6-jmO">
                                 <rect key="frame" x="260" y="554" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="8fz-9A-dCx"/>
@@ -483,7 +482,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="245" id="hG8-rR-vfh"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.</string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="alphabet" returnKeyType="done"/>
@@ -539,7 +537,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M14-eu-fxK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6903" y="238"/>
+            <point key="canvasLocation" x="6901.5267175572517" y="237.32394366197184"/>
         </scene>
         <!--Choose a category-->
         <scene sceneID="Jbw-I3-WVV">
@@ -652,7 +650,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bed.double.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="calendar.badge.clock" catalog="system" width="128" height="109"/>
+        <image name="calendar.badge.clock" catalog="system" width="128" height="108"/>
         <image name="checklist" catalog="system" width="128" height="107"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
         <image name="cross.case.fill" catalog="system" width="128" height="100"/>
@@ -660,9 +658,9 @@
         <image name="cross.fill" catalog="system" width="128" height="116"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="paintbrush.fill" catalog="system" width="122" height="128"/>
-        <image name="person.2.fill" catalog="system" width="128" height="86"/>
-        <image name="person.2.wave.2.fill" catalog="system" width="128" height="88"/>
-        <image name="powerplug.fill" catalog="system" width="128" height="85"/>
+        <image name="person.2.fill" catalog="system" width="128" height="81"/>
+        <image name="person.2.wave.2.fill" catalog="system" width="128" height="84"/>
+        <image name="powerplug.fill" catalog="system" width="128" height="82"/>
         <image name="wrench.and.screwdriver.fill" catalog="system" width="128" height="119"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

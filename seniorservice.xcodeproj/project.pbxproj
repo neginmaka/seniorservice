@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0913264C2A570CF700D06198 /* PreviousRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913264B2A570CF700D06198 /* PreviousRequestsViewController.swift */; };
+		096E1BD22AA69C1700677574 /* ServiceStatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E1BD12AA69C1700677574 /* ServiceStatusEnum.swift */; };
 		0981468A2A5A36B80084654A /* HomeServicesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098146892A5A36B80084654A /* HomeServicesEnum.swift */; };
 		0981468C2A5A3D070084654A /* HealthServicesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0981468B2A5A3D070084654A /* HealthServicesEnum.swift */; };
 		0981468F2A5A68F20084654A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0981468E2A5A68F20084654A /* LoginViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0913264B2A570CF700D06198 /* PreviousRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRequestsViewController.swift; sourceTree = "<group>"; };
+		096E1BD12AA69C1700677574 /* ServiceStatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStatusEnum.swift; sourceTree = "<group>"; };
 		098146892A5A36B80084654A /* HomeServicesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServicesEnum.swift; sourceTree = "<group>"; };
 		0981468B2A5A3D070084654A /* HealthServicesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthServicesEnum.swift; sourceTree = "<group>"; };
 		0981468E2A5A68F20084654A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				098146892A5A36B80084654A /* HomeServicesEnum.swift */,
 				0981468B2A5A3D070084654A /* HealthServicesEnum.swift */,
+				096E1BD12AA69C1700677574 /* ServiceStatusEnum.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				09BF2C7A2A49B31B009F2EA1 /* AppDelegate.swift in Sources */,
 				098146942A5A6B3B0084654A /* Request.swift in Sources */,
 				09BF2C7C2A49B31B009F2EA1 /* SceneDelegate.swift in Sources */,
+				096E1BD22AA69C1700677574 /* ServiceStatusEnum.swift in Sources */,
 				0981468A2A5A36B80084654A /* HomeServicesEnum.swift in Sources */,
 				098E1BA42A4CDFE400E1ACAA /* HomeViewController.swift in Sources */,
 				0913264C2A570CF700D06198 /* PreviousRequestsViewController.swift in Sources */,
