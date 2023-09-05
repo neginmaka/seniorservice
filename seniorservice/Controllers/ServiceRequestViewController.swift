@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ServiceRequestViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
+class ServiceRequestViewController: BaseUIViewController, UITextViewDelegate, UITextFieldDelegate {
     @IBOutlet weak var serviceNameLabel : UILabel!
     @IBOutlet weak var categoryNameLabel : UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!

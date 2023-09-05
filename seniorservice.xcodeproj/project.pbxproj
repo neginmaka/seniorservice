@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0913264C2A570CF700D06198 /* PreviousRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913264B2A570CF700D06198 /* PreviousRequestsViewController.swift */; };
 		096E1BD22AA69C1700677574 /* ServiceStatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E1BD12AA69C1700677574 /* ServiceStatusEnum.swift */; };
+		096E1BD42AA6A01300677574 /* DesignHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E1BD32AA6A01300677574 /* DesignHelper.swift */; };
+		096E1BD62AA6A2C100677574 /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E1BD52AA6A2C100677574 /* BaseUIViewController.swift */; };
 		0981468A2A5A36B80084654A /* HomeServicesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098146892A5A36B80084654A /* HomeServicesEnum.swift */; };
 		0981468C2A5A3D070084654A /* HealthServicesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0981468B2A5A3D070084654A /* HealthServicesEnum.swift */; };
 		0981468F2A5A68F20084654A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0981468E2A5A68F20084654A /* LoginViewController.swift */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		0913264B2A570CF700D06198 /* PreviousRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRequestsViewController.swift; sourceTree = "<group>"; };
 		096E1BD12AA69C1700677574 /* ServiceStatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStatusEnum.swift; sourceTree = "<group>"; };
+		096E1BD32AA6A01300677574 /* DesignHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignHelper.swift; sourceTree = "<group>"; };
+		096E1BD52AA6A2C100677574 /* BaseUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
 		098146892A5A36B80084654A /* HomeServicesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServicesEnum.swift; sourceTree = "<group>"; };
 		0981468B2A5A3D070084654A /* HealthServicesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthServicesEnum.swift; sourceTree = "<group>"; };
 		0981468E2A5A68F20084654A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				098146962A5A6B9A0084654A /* JsonHelper.swift */,
+				096E1BD32AA6A01300677574 /* DesignHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 				0993C99C2A4EFA6D000C0528 /* HealthViewController.swift */,
 				098E1BA52A4CE2DE00E1ACAA /* ServiceRequestViewController.swift */,
 				0981468E2A5A68F20084654A /* LoginViewController.swift */,
+				096E1BD52AA6A2C100677574 /* BaseUIViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -216,9 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096E1BD62AA6A2C100677574 /* BaseUIViewController.swift in Sources */,
 				09BF2C7E2A49B31B009F2EA1 /* FirstViewController.swift in Sources */,
 				09BF2C7A2A49B31B009F2EA1 /* AppDelegate.swift in Sources */,
 				098146942A5A6B3B0084654A /* Request.swift in Sources */,
+				096E1BD42AA6A01300677574 /* DesignHelper.swift in Sources */,
 				09BF2C7C2A49B31B009F2EA1 /* SceneDelegate.swift in Sources */,
 				096E1BD22AA69C1700677574 /* ServiceStatusEnum.swift in Sources */,
 				0981468A2A5A36B80084654A /* HomeServicesEnum.swift in Sources */,
@@ -372,7 +380,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LFT78YCJ38;
@@ -406,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LFT78YCJ38;

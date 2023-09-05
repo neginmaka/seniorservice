@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PreviousRequestsViewController: UIViewController {
+class PreviousRequestsViewController: BaseUIViewController {
     @IBOutlet var tableView: UITableView!
     
     var data: [Request] = []

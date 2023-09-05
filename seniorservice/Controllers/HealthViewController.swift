@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HealthViewController: UIViewController {
+class HealthViewController: BaseUIViewController {
     
     @IBOutlet weak var nursingButton: UIButton!
     @IBOutlet weak var physioButton: UIButton!

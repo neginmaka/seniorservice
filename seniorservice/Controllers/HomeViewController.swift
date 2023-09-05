@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseUIViewController {
     @IBOutlet weak var paintingButton: UIButton!
     @IBOutlet weak var plumbingButton: UIButton!
     
