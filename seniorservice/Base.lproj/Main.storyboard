@@ -117,7 +117,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Home" imagePadding="15">
                                             <imageReference key="image" image="house.fill" catalog="system" variableValue="0.0"/>
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <color key="backgroundColor" red="0.31377100099999999" green="0.29772537830000001" blue="0.53861120979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -131,7 +131,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="cross.case.fill" catalog="system" title="Health" imagePadding="15">
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <color key="backgroundColor" red="0.31377100099999999" green="0.29772537830000001" blue="0.53861120979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -170,6 +170,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xw-P5-KJv">
                                 <rect key="frame" x="105" y="173" width="183" height="31.333333333333343"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -188,7 +189,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="wrench.and.screwdriver.fill" catalog="system" title="Plumbing" imagePadding="15">
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <color key="backgroundColor" red="0.31377100099999999" green="0.29772537830000001" blue="0.53861120979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -202,7 +203,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="powerplug.fill" catalog="system" title="Electrical" imagePadding="15">
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <color key="backgroundColor" red="0.31377100099999999" green="0.29772537830000001" blue="0.53861120979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -217,7 +218,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Painting" imagePadding="15">
                                             <imageReference key="image" image="paintbrush.fill" catalog="system" variableValue="0.0"/>
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <color key="backgroundColor" red="0.31377100099999999" green="0.29772537830000001" blue="0.53861120979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -231,7 +232,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="person.2.fill" catalog="system" title="General" imagePadding="15">
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <color key="backgroundColor" red="0.31377100099999999" green="0.29772537830000001" blue="0.53861120979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -294,6 +295,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUj-d9-U68">
                                 <rect key="frame" x="100.66666666666669" y="173" width="192" height="31.333333333333343"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -312,7 +314,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="cross.fill" catalog="system" title="Nursing" imagePadding="15">
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <color key="backgroundColor" red="0.31377100099999999" green="0.29772537830000001" blue="0.53861120979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -326,7 +328,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="bed.double.circle.fill" catalog="system" title="Physiotherapy" imagePadding="15">
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <color key="backgroundColor" red="0.31377100099999999" green="0.29772537830000001" blue="0.53861120979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -341,7 +343,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Speech Therapy" imagePadding="15">
                                             <imageReference key="image" image="person.2.wave.2.fill" catalog="system" variableValue="0.0"/>
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <color key="backgroundColor" red="0.31377100099999999" green="0.29772537830000001" blue="0.53861120979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -355,7 +357,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="cross.circle" catalog="system" title="Personal Care" imagePadding="15">
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <color key="backgroundColor" red="0.31377100099999999" green="0.29772537830000001" blue="0.53861120979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -398,6 +400,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Catagory&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo6-u7-wfS">
                                 <rect key="frame" x="79" y="173" width="235" height="32"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="Qcc-Zn-7LS"/>
                                     <constraint firstAttribute="width" constant="235" id="qvo-zf-LZ4"/>
@@ -408,7 +411,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbH-j2-kgu">
                                 <rect key="frame" x="79" y="332" width="99" height="22"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="9PY-ht-9uS"/>
@@ -439,23 +442,26 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ics-A6-jmO">
                                 <rect key="frame" x="260" y="554" width="51" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="8fz-9A-dCx"/>
                                     <constraint firstAttribute="width" constant="49" id="tau-8V-mW7"/>
                                 </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="switchDidChange:" destination="2rS-mp-KMB" eventType="valueChanged" id="WuO-Pc-gtF"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;ServiceName&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vma-cj-AYx">
                                 <rect key="frame" x="79" y="245" width="235" height="32"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="235" id="eK7-8Y-tdC"/>
                                     <constraint firstAttribute="height" constant="32" id="ula-7G-Loe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cv6-Eh-yav">
@@ -467,7 +473,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="checkmark.circle.fill" catalog="system" title="Submit" imagePadding="15">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="backgroundColor" red="0.31377100095521898" green="0.29772537830062562" blue="0.53861120975378785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -478,7 +484,7 @@
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5zI-6P-Lcb" userLabel="Large Text View">
                                 <rect key="frame" x="79" y="371" width="245" height="70"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="245" id="hG8-rR-vfh"/>
                                 </constraints>
@@ -488,7 +494,7 @@
                             </textView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5tN-cx-Inx">
                                 <rect key="frame" x="156" y="470" width="168" height="34"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                 <connections>
@@ -573,7 +579,8 @@
                                 <rect key="frame" x="25" y="256" width="341" height="452"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="separatorColor" systemColor="systemIndigoColor"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="requestCustomCell" rowHeight="80" id="IIZ-qT-ZeU" customClass="RequestCell" customModule="seniorservice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="341" height="80"/>
@@ -611,6 +618,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="V21-3R-IeP" secondAttribute="trailing" constant="41" id="tCZ-cg-KDN"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="createdDate" destination="V21-3R-IeP" id="9O8-5C-yIr"/>
                                             <outlet property="service" destination="NAg-Zj-Iyg" id="k0X-Gr-047"/>
@@ -635,7 +643,9 @@
                             <constraint firstItem="2I8-jZ-tYr" firstAttribute="trailing" secondItem="wEl-Ml-BzH" secondAttribute="trailing" constant="87.666666666666629" id="uGc-qw-gmF"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Previous Requests" selectedImage="calendar.badge.clock" catalog="system" id="JV8-pr-fcl"/>
+                    <tabBarItem key="tabBarItem" title="Previous Requests" image="list.bullet.clipboard.fill" catalog="system" id="JV8-pr-fcl">
+                        <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="NhX-IU-4Tb"/>
                     <connections>
                         <outlet property="tableView" destination="bqA-ZR-464" id="uR3-Af-Gsa"/>
@@ -649,31 +659,26 @@
     <inferredMetricsTieBreakers>
         <segue reference="b8j-BM-gHt"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" systemColor="tintColor"/>
     <resources>
         <image name="bed.double.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="calendar.badge.clock" catalog="system" width="128" height="108"/>
         <image name="checklist" catalog="system" width="128" height="107"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
         <image name="cross.case.fill" catalog="system" width="128" height="100"/>
         <image name="cross.circle" catalog="system" width="128" height="123"/>
         <image name="cross.fill" catalog="system" width="128" height="116"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="list.bullet.clipboard.fill" catalog="system" width="103" height="128"/>
         <image name="paintbrush.fill" catalog="system" width="122" height="128"/>
         <image name="person.2.fill" catalog="system" width="128" height="81"/>
         <image name="person.2.wave.2.fill" catalog="system" width="128" height="84"/>
         <image name="powerplug.fill" catalog="system" width="128" height="82"/>
         <image name="wrench.and.screwdriver.fill" catalog="system" width="128" height="119"/>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
